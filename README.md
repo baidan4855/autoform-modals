@@ -13,7 +13,7 @@ Adds bootstrap modals to update doc's fields from a template.
 
 #### define a template for update some fields ####
 
-```
+```html
 <template name="updateArticleTitleModalForm">
 	{{#autoForm schema="onlyTitle" collection="Articles" id="updateArticleTitleForm" doc=this type="update" buttonContent="update"}}
 		{{> afObjectField name="title"}}
@@ -23,7 +23,7 @@ Adds bootstrap modals to update doc's fields from a template.
 ```
 #### call jkafModal ####
 
-```
+```html
 {{#jkafModal template="updateArticleTitleModalForm" doc=this id="updateArticleTitleForm" class="fa fa-pencil"}}
   update
 {{/jkafModal}}
