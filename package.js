@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jackjiang:autoform-modals',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'Adds bootstrap modals to update doc\'s fields from a template.',
   // URL to the Git repository containing the source code for this package.
