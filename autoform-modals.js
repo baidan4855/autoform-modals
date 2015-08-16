@@ -9,6 +9,7 @@ Template.jkafModal.events({
 		e.preventDefault();
 		Session.set("jkafTemplate",Template.currentData().template)
 		Session.set("jkafDoc",Template.currentData().doc)
+		Session.set("jkafTitle",Template.currentData().title)
 		AutoForm.addHooks(Template.currentData().id,{
 			onSuccess: function () {
 				$("#jkafModal").modal('hide');
@@ -25,5 +26,8 @@ Template.jkautoformModals.helpers({
 	},
 	doc:function(){
 		return Session.get("jkafDoc");
+	},
+	title:function(){
+		return Session.get("jkafTitle") || "Update";
 	}
 })
